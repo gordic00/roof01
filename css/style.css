@@ -1,0 +1,157 @@
+@font-face {
+    src: url(../font/LuxuriousRoman-Regular.ttf);
+    font-family: luxroman;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: luxroman;
+}
+
+body {
+    background-color: #eee;
+}
+
+.wrapper {
+    margin: 0 auto 0 60px;
+    width: 1000px;
+}
+
+nav .left {
+    float: left;
+    width: 45%;
+    height: 100px;
+}
+
+nav .main {
+    padding-top: 30px;
+    float: left;
+    width: 17%;
+    height: 100px;
+    display: block;
+}
+
+nav .right {
+    padding-top: 30px;
+    float: left;
+    width: 28%;
+    height: 100px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+nav .logo {
+    float: right;
+    width: 10%;
+    line-height: 100px;
+    height: 100px;
+}
+
+.top {
+    background-image: url(../images/img7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   /* opacity: 0.8;*/
+    float: left;
+    height: 250px;
+    width: 100%;
+    color:#eee;
+    text-align:justify;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.top p {
+    padding-left: 10%;
+}
+
+.left-top{
+    float: left;
+    width: 50%;
+    height: 300px;
+    margin: auto;
+    padding: 10px;
+}
+.left-top img { 
+    width: 100%;
+    height: 100%;
+    /*opacity: 0.7;*/
+  }
+
+.left {
+    float: left;
+    width: 50%;
+    height: 300px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.right {
+    float: left;
+    width: 50%;
+    height: 300px;
+    padding: 10px 20px;
+    text-align: center;
+}
+.right-top {
+    float: left;
+    width: 50%;
+    height: 300px;
+    padding: 10px;
+}
+.right-top img { 
+    width: 100%;
+    height: 100%;
+    /*opacity: 0.7;*/
+  }
+
+.contact {
+    float: left;
+    width: 40%;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    nav .left, nav .main, nav .right, nav .logo, .left, .right, .left-top, .right-top .contact .top {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}
+
+nav {
+    height: 100px;
+    background-color: white;
+    width: 100%;
+}
+
+ul {
+    margin-left: 0px;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding-top: 30px;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: luxroman;
+    color: #1e1e1e;
+    padding: 0 20px;
+}
+
+ul li a:hover {
+    font-weight: bold;
+}
+
+footer {
+    height: auto;
+    background-color: white;
+    width: 100%;
+    float: left;
+}
