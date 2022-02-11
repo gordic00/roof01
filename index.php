@@ -17,13 +17,14 @@
         <div class="left">
             <br>
             <h3>New roof or a repair?</h3> <br><br>
-            <p>We are offering expert residental roofing. Our highly skilled crew has experience in instalig and replacing flat and pitched roofing, so rest assured both you and your home will be fully taken care of from the initial quote until the final, thorought cleanup.</p><br>
+            <p>We are offering expert residental roofing. Our highly skilled crew has experience in installig and replacing shingles, so rest assured both you and your home will be fully taken care of from the initial quote until the final, thorought cleanup.</p><br>
             <p>Give us a call to lear more about our services or to requeast an estimate for the cost of residential roofing for your home.</p>
         </div>
         <div class="right-top">
             <img src="images/img3.jpg" alt="rooftop">            
         </div>
     </div>
+</div>
    <?php
     include 'footer.php';
    ?>

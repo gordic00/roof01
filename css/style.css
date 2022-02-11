@@ -35,13 +35,17 @@ nav .main {
 }
 
 nav .right {
-    padding-top: 30px;
+    padding-top: 15px;
     float: left;
     width: 28%;
     height: 100px;
     text-align: left;
     font-size: 14px;
     font-weight: 200;
+}
+nav .right a {
+    color: black;
+    text-decoration: none;
 }
 
 nav .logo {
@@ -111,13 +115,150 @@ nav .logo {
 
 .contact {
     float: left;
+    height: 500px;
     width: 40%;
     padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.contact-info {
+    /*background-image: url('../images/banda.jpg');*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    float: left;
+    width: 60%;
+    /*padding-left: 20px;*/
+    margin-bottom: 20px;
+}
+.about {
+    float: left;
+    min-height: 500px;
+    width: 40%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.about-info {
+    min-height: 500px;
+    float: left;
+    width: 60%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: 19px;
+}
+.repair {
+    float: left;
+    min-height: 250px;
+    width: 40%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    /*background-image: url('../images/banda.jpg');*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.repair-info {
+    min-height: 250px;
+    float: left;
+    width: 60%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+#call {
+    font-size: 19px;
+    background-color: white;
+    border-radius: 8px;
+    border:0;
+    font-weight: bold;
+}
+#call:hover {
+    font-weight: bold;
+    color: white;
+    background-color: red;
+}
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:100%;
+    width:100%;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:500px;
+    width:600px;
+}
+
+.wrapper-footer {
+    /*margin: 0 auto 0 60px;*/
+    margin: 0 auto 0 auto;
+    width: 1000px;
+}
+
+.wrapper-footer .left {
+    display: block;
+    float: left;
+    width: 30%;
+    text-align: left;
+}
+
+.wrapper-footer .main {
+    display: block;
+    float: left;
+    width: 20%;
+    text-align: left;
+}
+
+.wrapper-footer .right {
+    display: block;
+    float: left;
+    width: 30%;
+    text-align: left;
+}
+
+.wrapper-footer .logo {
+    float: right;
+    width: 20%;
+    line-height: 100px;
+    height: 100px;
 }
 
 @media screen and (max-width: 800px) {
-    nav .left, nav .main, nav .right, nav .logo, .left, .right, .left-top, .right-top .contact .top {
+    nav .left, nav .main, nav .right, nav .logo, .left, .left.dropdown, .right, .left-top, .right-top,.contact, .contact-info, .top, .wrapper-footer .left, .wrapper-footer .main, .wrapper-footer .right, .wrapper-footer .logo, .about-info, .about, .repair, .repair-info {
       width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      max-width: 600px;
+    }
+    nav ul li {
+        float: left;
+        display: block;
+        text-align: left;
+    }
+    nav .dropdown {
+        float: left;
+    }
+    nav .dropdown-content a:hover {
+        display:block;
+    }
+    nav {
+        min-height: 400px;
+    }
+    nav .logo {
+        float: left;
+    }
+    .wrapper-footer .logo {
+        float: left;
+        min-height: 200px;
     }
 }
 
@@ -125,6 +266,13 @@ nav {
     height: 100px;
     background-color: white;
     width: 100%;
+}
+
+footer {    
+    width: 100%;
+    height: auto;
+    background-color: white;
+    float: left;
 }
 
 ul {
@@ -150,9 +298,33 @@ ul li a:hover {
     font-weight: bold;
 }
 
-footer {
-    height: auto;
-    background-color: white;
-    width: 100%;
-    float: left;
-}
+nav .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+ nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+ nav .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 8px;
+  }
+  
+ nav .dropdown-content a:hover {background-color: #f1f1f1}
+  
+ nav .dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 8px;
+  }
+  

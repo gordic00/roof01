@@ -46,7 +46,7 @@ class MailContr {
         $completeMessage = "From: " . $this->name . ", <br> E-mail: " . $this->email. ", <br> Phone: " . $this->phone . ", <br> Message: <br>" . $this->message;
 
         $mail1 = new PHPMailer();
-        $mail1->isSMTP();
+        //$mail1->isSMTP();
         $mail1->SMTPAuth = true;
         $mail1->SMTPSecure = 'ssl';
         $mail1->Host = 'smtp.gmail.com';
@@ -57,7 +57,8 @@ class MailContr {
         $mail1->setFrom($this->email,$this->name);
         $mail1->Subject = $this->subject;
         $mail1->Body = $completeMessage;
-        $mail1->addAddress('gordic00@gmail.com');
+        $mail1->addAddress('hardhammerroofing@gmail.com');
+        //$mail1->addAddress('gordic00@gmail.com');
 
         $mail1->send();
  
