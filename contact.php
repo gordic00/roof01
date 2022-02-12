@@ -30,7 +30,7 @@
         <div class="contact-info">
         <div class="mapouter">
             <div class="gmap_canvas">
-                <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=hard%20hammer%20roofing%20kelowna&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=1273%20Government%20St%20103,%20Penticton,%20BC%20V2A%204V6,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                 </iframe>
             </div>
         </div>
