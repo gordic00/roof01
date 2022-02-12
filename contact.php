@@ -14,7 +14,7 @@
                 <input type="text" name="email" placeholder="xxxxxx@xxxxx.xxx" style=width:300px required><br>
 
                 <label>Phone number:</label><br>
-                <input type="text" name="phone" placeholder="+381 6x xxxxxxx", " style=width:300px required><br>
+                <input type="text" name="phone" placeholder="+381 6x xxxxxxx", " style=width:300px pattern="[+09]{3-4}[0-9]{6-7}" required><br>
         <!-- Patern za Kanadu pattern="[+09]{4}[0-9]{3}[0-9]{4}" pattern="[+09]{3-4}[0-9]{6-7}-->
         <!-- Patern za Srbiju pattern="[+09]{3-4}[0-9]{6-7}"-->
 

@@ -42,6 +42,10 @@ class MailContr {
             header('location:../contact.php?error=invalidname');
             exit;
         }
+        if (!$this->invalidPhone()) {
+            header('location:../contact.php?error=invalidPhone');
+            exit;
+        }
 
         $completeMessage = "From: " . $this->name . ", <br> E-mail: " . $this->email. ", <br> Phone: " . $this->phone . ", <br> Message: <br>" . $this->message;
 
@@ -93,6 +97,16 @@ class MailContr {
     {
         $result = false;
         if (!filter_var($this->email, FILTER_VALIDATE_EMAIL)) {
+            $result = false;
+        } else{
+            $result = true;
+        }
+        return $result;
+    }
+    private function invalidPhone() 
+    {
+        $result = false;
+        if (!preg_match("/^[0-9+]{8,15}$/", $this->phone)) {
             $result = false;
         } else{
             $result = true;
